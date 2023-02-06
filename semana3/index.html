@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <p>{{name}}</p>
+        <br />
+        cambiar nombre 
+    <input type="text" v-model="newName" v-on:input="changeName()">
+        <button type="button" v-on:click="chageName()">cambiar</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = vue.createApp({
+            data() {
+            return{
+                title: 'programacion4',
+                name: 'josue flores',
+                newName:'',
+            }
+        },
+        methods:{np
+            changeName(){
+                this.name=this.newName
+
+            }
+        }
+    }).monut('#app')
+    </script>
+</body>
+</html>
